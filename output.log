@@ -1,0 +1,1985 @@
+Current working directory: /Users/Shared/Python Learning/Bartending
+ * Serving Flask app 'app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5050
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 312-751-760
+127.0.0.1 - - [24/Jul/2025 13:43:04] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jul/2025 13:43:04] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jul/2025 13:43:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [24/Jul/2025 13:43:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [24/Jul/2025 13:43:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [24/Jul/2025 13:43:23] "[32mPOST /set_venue HTTP/1.1[0m" 302 -
+127.0.0.1 - - [24/Jul/2025 13:43:23] "GET /home HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jul/2025 13:43:24] "GET /refresher HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jul/2025 13:43:25] "GET /home HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jul/2025 13:43:27] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jul/2025 13:43:30] "[32mPOST /set_venue HTTP/1.1[0m" 302 -
+127.0.0.1 - - [24/Jul/2025 13:43:30] "GET /home HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jul/2025 13:43:32] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jul/2025 13:43:33] "[32mPOST /set_venue HTTP/1.1[0m" 302 -
+127.0.0.1 - - [24/Jul/2025 13:43:33] "GET /home HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jul/2025 13:43:35] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jul/2025 13:43:37] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [24/Jul/2025 13:43:37] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [24/Jul/2025 13:43:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [24/Jul/2025 14:03:41] "[32mPOST /set_venue HTTP/1.1[0m" 302 -
+127.0.0.1 - - [24/Jul/2025 14:03:41] "GET /home HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jul/2025 14:03:44] "GET /select_drink HTTP/1.1" 200 -
+Current working directory: /Users/Shared/Python Learning/Bartending
+Row Drink: Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Margarita
+Row Drink: Margarita, Mixer: , Spirit: Triple Sec, Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: Tequila, Amount: 2.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Pineapple Juice, Spirit: , Amount: 0.75 oz, Garnish: , Glass: Collins
+Row Drink: Pineapple Rum Noir, Mixer: Strawberry Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Simple Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Rum, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Pinapple, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Mint Sprig, Glass: 
+Row Drink: Cosm-Politan, Mixer: Crannberry Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: Martini
+Row Drink: Cosm-Politan, Mixer: Lime Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: Batch, Amount: 2.75 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Dragon Fruit, Glass: 
+Row Drink: Spicy Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Rocks
+Row Drink: Spicy Margarita, Mixer: , Spirit: Agave, Amount: .75 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Spicy Tequila, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Big D Margarita, Mixer: Lime Juice, Spirit: , Amount: 1 oz, Garnish: , Glass: Scooners
+Row Drink: Big D Margarita, Mixer: , Spirit: Agave, Amount: 1oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Socorro Blanco Tequila, Amount: 3 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: Simple Syrup, Spirit: , Amount: 0.25 oz, Garnish: , Glass: Rocks
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Batch, Amount: 2.5 oz, Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Black Walnut Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Orange Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: , Amount: , Garnish: Orange Peel, Glass: 
+Row Drink: Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Margarita
+Row Drink: Margarita, Mixer: , Spirit: Triple Sec, Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: Tequila, Amount: 2.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Pineapple Juice, Spirit: , Amount: 0.75 oz, Garnish: , Glass: Collins
+Row Drink: Pineapple Rum Noir, Mixer: Strawberry Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Simple Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Rum, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Pinapple, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Mint Sprig, Glass: 
+Row Drink: Cosm-Politan, Mixer: Crannberry Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: Martini
+Row Drink: Cosm-Politan, Mixer: Lime Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: Batch, Amount: 2.75 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Dragon Fruit, Glass: 
+Row Drink: Spicy Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Rocks
+Row Drink: Spicy Margarita, Mixer: , Spirit: Agave, Amount: .75 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Spicy Tequila, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Big D Margarita, Mixer: Lime Juice, Spirit: , Amount: 1 oz, Garnish: , Glass: Scooners
+Row Drink: Big D Margarita, Mixer: , Spirit: Agave, Amount: 1oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Socorro Blanco Tequila, Amount: 3 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: Simple Syrup, Spirit: , Amount: 0.25 oz, Garnish: , Glass: Rocks
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Batch, Amount: 2.5 oz, Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Black Walnut Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Orange Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: , Amount: , Garnish: Orange Peel, Glass: 
+Row Drink: Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Margarita
+Row Drink: Margarita, Mixer: , Spirit: Triple Sec, Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: Tequila, Amount: 2.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Pineapple Juice, Spirit: , Amount: 0.75 oz, Garnish: , Glass: Collins
+Row Drink: Pineapple Rum Noir, Mixer: Strawberry Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Simple Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Rum, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Pinapple, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Mint Sprig, Glass: 
+Row Drink: Cosm-Politan, Mixer: Crannberry Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: Martini
+Row Drink: Cosm-Politan, Mixer: Lime Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: Batch, Amount: 2.75 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Dragon Fruit, Glass: 
+Row Drink: Spicy Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Rocks
+Row Drink: Spicy Margarita, Mixer: , Spirit: Agave, Amount: .75 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Spicy Tequila, Amount: 1.5 oz, Garnish: , Glass: 127.0.0.1 - - [24/Jul/2025 14:03:47] "GET /train/Margarita HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jul/2025 14:04:04] "POST /check_answer/Margarita HTTP/1.1" 200 -
+127.0.0.1 - - [27/Jul/2025 13:19:52] "[35m[1mGET /select_drink HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/socket.py", line 977, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/urllib3/connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x1051560d0>: Failed to resolve 'oauth2.googleapis.com' ([Errno 8] nodename nor servname provided, or not known)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/urllib3/connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/urllib3/connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/urllib3/connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x1051560d0>: Failed to resolve 'oauth2.googleapis.com' ([Errno 8] nodename nor servname provided, or not known)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/google/auth/transport/requests.py", line 187, in __call__
+    response = self.session.request(
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x1051560d0>: Failed to resolve 'oauth2.googleapis.com' ([Errno 8] nodename nor servname provided, or not known)"))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/flask/app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/Shared/Python Learning/Bartending/app.py", line 78, in select_drink
+    drinks = list(get_all_drinks(session.get('venue')).keys())
+                  ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Shared/Python Learning/Bartending/Flask/sheets.py", line 32, in get_all_drinks
+    sheet = client.open("Bartending Drinks").worksheet(venue)
+            ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/gspread/client.py", line 145, in open
+    spreadsheet_files, response = self._list_spreadsheet_files(title, folder_id)
+                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/gspread/client.py", line 118, in _list_spreadsheet_files
+    response = self.http_client.request("get", url, params=params)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/gspread/http_client.py", line 114, in request
+    response = self.session.request(
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/google/auth/transport/requests.py", line 535, in request
+    self.credentials.before_request(auth_request, method, url, request_headers)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/google/auth/credentials.py", line 239, in before_request
+    self._blocking_refresh(request)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/google/auth/credentials.py", line 202, in _blocking_refresh
+    self.refresh(request)
+    ~~~~~~~~~~~~^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/google/oauth2/service_account.py", line 448, in refresh
+    access_token, expiry, _ = _client.jwt_grant(
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/google/oauth2/_client.py", line 299, in jwt_grant
+    response_data = _token_endpoint_request(
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/google/oauth2/_client.py", line 259, in _token_endpoint_request
+    response_status_ok, response_data, retryable_error = _token_endpoint_request_no_throw(
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/google/oauth2/_client.py", line 192, in _token_endpoint_request_no_throw
+    response = request(
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/google/auth/transport/requests.py", line 194, in __call__
+    raise new_exc from caught_exc
+google.auth.exceptions.TransportError: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x1051560d0>: Failed to resolve 'oauth2.googleapis.com' ([Errno 8] nodename nor servname provided, or not known)"))
+127.0.0.1 - - [27/Jul/2025 13:19:52] "GET /select_drink?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [27/Jul/2025 13:19:52] "GET /select_drink?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [27/Jul/2025 13:19:52] "GET /select_drink?__debugger__=yes&cmd=resource&f=console.png&s=nMZFMmIqQKXXyapmEyil HTTP/1.1" 200 -
+127.0.0.1 - - [27/Jul/2025 13:19:52] "GET /select_drink?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [27/Jul/2025 13:19:55] "[35m[1mGET /select_drink HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/socket.py", line 977, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/urllib3/connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x105328190>: Failed to resolve 'oauth2.googleapis.com' ([Errno 8] nodename nor servname provided, or not known)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/urllib3/connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/urllib3/connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/urllib3/connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x105328190>: Failed to resolve 'oauth2.googleapis.com' ([Errno 8] nodename nor servname provided, or not known)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/google/auth/transport/requests.py", line 187, in __call__
+    response = self.session.request(
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x105328190>: Failed to resolve 'oauth2.googleapis.com' ([Errno 8] nodename nor servname provided, or not known)"))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/flask/app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/Shared/Python Learning/Bartending/app.py", line 78, in select_drink
+    drinks = list(get_all_drinks(session.get('venue')).keys())
+                  ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Shared/Python Learning/Bartending/Flask/sheets.py", line 32, in get_all_drinks
+    sheet = client.open("Bartending Drinks").worksheet(venue)
+            ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/gspread/client.py", line 145, in open
+    spreadsheet_files, response = self._list_spreadsheet_files(title, folder_id)
+                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/gspread/client.py", line 118, in _list_spreadsheet_files
+    response = self.http_client.request("get", url, params=params)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/gspread/http_client.py", line 114, in request
+    response = self.session.request(
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/google/auth/transport/requests.py", line 535, in request
+    self.credentials.before_request(auth_request, method, url, request_headers)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/google/auth/credentials.py", line 239, in before_request
+    self._blocking_refresh(request)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/google/auth/credentials.py", line 202, in _blocking_refresh
+    self.refresh(request)
+    ~~~~~~~~~~~~^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/google/oauth2/service_account.py", line 448, in refresh
+    access_token, expiry, _ = _client.jwt_grant(
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/google/oauth2/_client.py", line 299, in jwt_grant
+    response_data = _token_endpoint_request(
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/google/oauth2/_client.py", line 259, in _token_endpoint_request
+    response_status_ok, response_data, retryable_error = _token_endpoint_request_no_throw(
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/google/oauth2/_client.py", line 192, in _token_endpoint_request_no_throw
+    response = request(
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/google/auth/transport/requests.py", line 194, in __call__
+    raise new_exc from caught_exc
+google.auth.exceptions.TransportError: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x105328190>: Failed to resolve 'oauth2.googleapis.com' ([Errno 8] nodename nor servname provided, or not known)"))
+127.0.0.1 - - [27/Jul/2025 13:19:55] "[36mGET /select_drink?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [27/Jul/2025 13:19:55] "[36mGET /select_drink?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [27/Jul/2025 13:19:55] "[36mGET /select_drink?__debugger__=yes&cmd=resource&f=console.png&s=nMZFMmIqQKXXyapmEyil HTTP/1.1[0m" 304 -
+127.0.0.1 - - [27/Jul/2025 13:21:42] "[35m[1mGET /select_drink HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/socket.py", line 977, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/urllib3/connection.py", line 704, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/urllib3/connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x1053291d0>: Failed to resolve 'oauth2.googleapis.com' ([Errno 8] nodename nor servname provided, or not known)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/urllib3/connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/urllib3/connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/urllib3/connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x1053291d0>: Failed to resolve 'oauth2.googleapis.com' ([Errno 8] nodename nor servname provided, or not known)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/google/auth/transport/requests.py", line 187, in __call__
+    response = self.session.request(
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x1053291d0>: Failed to resolve 'oauth2.googleapis.com' ([Errno 8] nodename nor servname provided, or not known)"))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/flask/app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/Shared/Python Learning/Bartending/app.py", line 78, in select_drink
+    drinks = list(get_all_drinks(session.get('venue')).keys())
+                  ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/Shared/Python Learning/Bartending/Flask/sheets.py", line 32, in get_all_drinks
+    sheet = client.open("Bartending Drinks").worksheet(venue)
+            ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/gspread/client.py", line 145, in open
+    spreadsheet_files, response = self._list_spreadsheet_files(title, folder_id)
+                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/gspread/client.py", line 118, in _list_spreadsheet_files
+    response = self.http_client.request("get", url, params=params)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/gspread/http_client.py", line 114, in request
+    response = self.session.request(
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/google/auth/transport/requests.py", line 535, in request
+    self.credentials.before_request(auth_request, method, url, request_headers)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/google/auth/credentials.py", line 239, in before_request
+    self._blocking_refresh(request)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/google/auth/credentials.py", line 202, in _blocking_refresh
+    self.refresh(request)
+    ~~~~~~~~~~~~^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/google/oauth2/service_account.py", line 448, in refresh
+    access_token, expiry, _ = _client.jwt_grant(
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/google/oauth2/_client.py", line 299, in jwt_grant
+    response_data = _token_endpoint_request(
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/google/oauth2/_client.py", line 259, in _token_endpoint_request
+    response_status_ok, response_data, retryable_error = _token_endpoint_request_no_throw(
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/google/oauth2/_client.py", line 192, in _token_endpoint_request_no_throw
+    response = request(
+    
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/google/auth/transport/requests.py", line 194, in __call__
+    raise new_exc from caught_exc
+google.auth.exceptions.TransportError: HTTPSConnectionPool(host='oauth2.googleapis.com', port=443): Max retries exceeded with url: /token (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x1053291d0>: Failed to resolve 'oauth2.googleapis.com' ([Errno 8] nodename nor servname provided, or not known)"))
+127.0.0.1 - - [27/Jul/2025 13:21:42] "[36mGET /select_drink?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [27/Jul/2025 13:21:42] "[36mGET /select_drink?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [27/Jul/2025 13:21:42] "[36mGET /select_drink?__debugger__=yes&cmd=resource&f=console.png&s=nMZFMmIqQKXXyapmEyil HTTP/1.1[0m" 304 -
+
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Big D Margarita, Mixer: Lime Juice, Spirit: , Amount: 1 oz, Garnish: , Glass: Scooners
+Row Drink: Big D Margarita, Mixer: , Spirit: Agave, Amount: 1oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Socorro Blanco Tequila, Amount: 3 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: Simple Syrup, Spirit: , Amount: 0.25 oz, Garnish: , Glass: Rocks
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Batch, Amount: 2.5 oz, Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Black Walnut Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Orange Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: , Amount: , Garnish: Orange Peel, Glass: 
+Row Drink: Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Margarita
+Row Drink: Margarita, Mixer: , Spirit: Triple Sec, Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: Tequila, Amount: 2.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Pineapple Juice, Spirit: , Amount: 0.75 oz, Garnish: , Glass: Collins
+Row Drink: Pineapple Rum Noir, Mixer: Strawberry Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Simple Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Rum, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Pinapple, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Mint Sprig, Glass: 
+Row Drink: Cosm-Politan, Mixer: Crannberry Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: Martini
+Row Drink: Cosm-Politan, Mixer: Lime Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: Batch, Amount: 2.75 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Dragon Fruit, Glass: 
+Row Drink: Spicy Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Rocks
+Row Drink: Spicy Margarita, Mixer: , Spirit: Agave, Amount: .75 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Spicy Tequila, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Big D Margarita, Mixer: Lime Juice, Spirit: , Amount: 1 oz, Garnish: , Glass: Scooners
+Row Drink: Big D Margarita, Mixer: , Spirit: Agave, Amount: 1oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Socorro Blanco Tequila, Amount: 3 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: Simple Syrup, Spirit: , Amount: 0.25 oz, Garnish: , Glass: Rocks
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Batch, Amount: 2.5 oz, Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Black Walnut Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Orange Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: , Amount: , Garnish: Orange Peel, Glass: 
+Row Drink: Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Margarita
+Row Drink: Margarita, Mixer: , Spirit: Triple Sec, Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: Tequila, Amount: 2.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Pineapple Juice, Spirit: , Amount: 0.75 oz, Garnish: , Glass: Collins
+Row Drink: Pineapple Rum Noir, Mixer: Strawberry Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Simple Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Rum, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Pinapple, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Mint Sprig, Glass: 
+Row Drink: Cosm-Politan, Mixer: Crannberry Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: Martini
+Row Drink: Cosm-Politan, Mixer: Lime Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: Batch, Amount: 2.75 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Dragon Fruit, Glass: 
+Row Drink: Spicy Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Rocks
+Row Drink: Spicy Margarita, Mixer: , Spirit: Agave, Amount: .75 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Spicy Tequila, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Big D Margarita, Mixer: Lime Juice, Spirit: , Amount: 1 oz, Garnish: , Glass: Scooners
+Row Drink: Big D Margarita, Mixer: , Spirit: Agave, Amount: 1oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Socorro Blanco Tequila, Amount: 3 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: Simple Syrup, Spirit: , Amount: 0.25 oz, Garnish: , Glass: Rocks
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Batch, Amount: 2.5 oz, Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Black Walnut Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Orange Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: , Amount: , Garnish: Orange Peel, Glass: 
+Row Drink: Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Margarita
+Row Drink: Margarita, Mixer: , Spirit: Triple Sec, Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: Tequila, Amount: 2.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Pineapple Juice, Spirit: , Amount: 0.75 oz, Garnish: , Glass: Collins
+Row Drink: Pineapple Rum Noir, Mixer: Strawberry Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: 127.0.0.1 - - [27/Jul/2025 13:23:03] "GET /select_drink HTTP/1.1" 200 -
+127.0.0.1 - - [27/Jul/2025 13:23:07] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [27/Jul/2025 13:23:21] "[32mPOST /set_venue HTTP/1.1[0m" 302 -
+127.0.0.1 - - [27/Jul/2025 13:23:22] "GET /home HTTP/1.1" 200 -
+127.0.0.1 - - [27/Jul/2025 13:23:26] "GET /refresher HTTP/1.1" 200 -
+127.0.0.1 - - [27/Jul/2025 13:23:34] "GET /home HTTP/1.1" 200 -
+
+Row Drink: Pineapple Rum Noir, Mixer: Simple Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Rum, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Pinapple, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Mint Sprig, Glass: 
+Row Drink: Cosm-Politan, Mixer: Crannberry Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: Martini
+Row Drink: Cosm-Politan, Mixer: Lime Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: Batch, Amount: 2.75 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Dragon Fruit, Glass: 
+Row Drink: Spicy Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Rocks
+Row Drink: Spicy Margarita, Mixer: , Spirit: Agave, Amount: .75 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Spicy Tequila, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Big D Margarita, Mixer: Lime Juice, Spirit: , Amount: 1 oz, Garnish: , Glass: Scooners
+Row Drink: Big D Margarita, Mixer: , Spirit: Agave, Amount: 1oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Socorro Blanco Tequila, Amount: 3 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: Simple Syrup, Spirit: , Amount: 0.25 oz, Garnish: , Glass: Rocks
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Batch, Amount: 2.5 oz, Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Black Walnut Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Orange Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: , Amount: , Garnish: Orange Peel, Glass: 
+Row Drink: Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Margarita
+Row Drink: Margarita, Mixer: , Spirit: Triple Sec, Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: Tequila, Amount: 2.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Pineapple Juice, Spirit: , Amount: 0.75 oz, Garnish: , Glass: Collins
+Row Drink: Pineapple Rum Noir, Mixer: Strawberry Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Simple Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Rum, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Pinapple, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Mint Sprig, Glass: 
+Row Drink: Cosm-Politan, Mixer: Crannberry Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: Martini
+Row Drink: Cosm-Politan, Mixer: Lime Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: Batch, Amount: 2.75 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Dragon Fruit, Glass: 
+Row Drink: Spicy Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Rocks
+Row Drink: Spicy Margarita, Mixer: , Spirit: Agave, Amount: .75 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Spicy Tequila, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Big D Margarita, Mixer: Lime Juice, Spirit: , Amount: 1 oz, Garnish: , Glass: Scooners
+Row Drink: Big D Margarita, Mixer: , Spirit: Agave, Amount: 1oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Socorro Blanco Tequila, Amount: 3 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: Simple Syrup, Spirit: , Amount: 0.25 oz, Garnish: , Glass: Rocks
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Batch, Amount: 2.5 oz, Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Black Walnut Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Orange Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: , Amount: , Garnish: Orange Peel, Glass: 
+Row Drink: Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Margarita
+Row Drink: Margarita, Mixer: , Spirit: Triple Sec, Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: Tequila, Amount: 2.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Pineapple Juice, Spirit: , Amount: 0.75 oz, Garnish: , Glass: Collins
+Row Drink: Pineapple Rum Noir, Mixer: Strawberry Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Simple Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Rum, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Pinapple, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Mint Sprig, Glass: 
+Row Drink: Cosm-Politan, Mixer: Crannberry Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: Martini
+Row Drink: Cosm-Politan, Mixer: Lime Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: Batch, Amount: 2.75 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Dragon Fruit, Glass: 
+Row Drink: Spicy Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Rocks
+Row Drink: Spicy Margarita, Mixer: , Spirit: Agave, Amount: .75 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Spicy Tequila, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Big D Margarita, Mixer: Lime Juice, Spirit: , Amount: 1 oz, Garnish: , Glass: Scooners
+Row Drink: Big D Margarita, Mixer: , Spirit: Agave, Amount: 1oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Socorro Blanco Tequila, Amount: 3 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 127.0.0.1 - - [27/Jul/2025 13:23:37] "GET /select_drink HTTP/1.1" 200 -
+127.0.0.1 - - [27/Jul/2025 13:23:41] "GET /train/Margarita HTTP/1.1" 200 -
+
+Row Drink: Tri-Blended Old Fashion, Mixer: Simple Syrup, Spirit: , Amount: 0.25 oz, Garnish: , Glass: Rocks
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Batch, Amount: 2.5 oz, Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Black Walnut Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Orange Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: , Amount: , Garnish: Orange Peel, Glass: 
+Row Drink: Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Margarita
+Row Drink: Margarita, Mixer: , Spirit: Triple Sec, Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: Tequila, Amount: 2.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Pineapple Juice, Spirit: , Amount: 0.75 oz, Garnish: , Glass: Collins
+Row Drink: Pineapple Rum Noir, Mixer: Strawberry Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Simple Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Rum, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Pinapple, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Mint Sprig, Glass: 
+Row Drink: Cosm-Politan, Mixer: Crannberry Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: Martini
+Row Drink: Cosm-Politan, Mixer: Lime Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: Batch, Amount: 2.75 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Dragon Fruit, Glass: 
+Row Drink: Spicy Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Rocks
+Row Drink: Spicy Margarita, Mixer: , Spirit: Agave, Amount: .75 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Spicy Tequila, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Big D Margarita, Mixer: Lime Juice, Spirit: , Amount: 1 oz, Garnish: , Glass: Scooners
+Row Drink: Big D Margarita, Mixer: , Spirit: Agave, Amount: 1oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Socorro Blanco Tequila, Amount: 3 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: Simple Syrup, Spirit: , Amount: 0.25 oz, Garnish: , Glass: Rocks
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Batch, Amount: 2.5 oz, Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Black Walnut Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Orange Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: , Amount: , Garnish: Orange Peel, Glass: 
+Row Drink: Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Margarita
+Row Drink: Margarita, Mixer: , Spirit: Triple Sec, Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: Tequila, Amount: 2.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Pineapple Juice, Spirit: , Amount: 0.75 oz, Garnish: , Glass: Collins
+Row Drink: Pineapple Rum Noir, Mixer: Strawberry Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Simple Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Rum, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Pinapple, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Mint Sprig, Glass: 
+Row Drink: Cosm-Politan, Mixer: Crannberry Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: Martini
+Row Drink: Cosm-Politan, Mixer: Lime Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: Batch, Amount: 2.75 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Dragon Fruit, Glass: 
+Row Drink: Spicy Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Rocks
+Row Drink: Spicy Margarita, Mixer: , Spirit: Agave, Amount: .75 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Spicy Tequila, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Big D Margarita, Mixer: Lime Juice, Spirit: , Amount: 1 oz, Garnish: , Glass: Scooners
+Row Drink: Big D Margarita, Mixer: , Spirit: Agave, Amount: 1oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Socorro Blanco Tequila, Amount: 3 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: Simple Syrup, Spirit: , Amount: 0.25 oz, Garnish: , Glass: Rocks
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Batch, Amount: 2.5 oz, Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Black Walnut Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Orange Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: , Amount: , Garnish: Orange Peel, Glass: 
+Row Drink: Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Margarita
+Row Drink: Margarita, Mixer: , Spirit: Triple Sec, Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: Tequila, Amount: 2.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Pineapple Juice, Spirit: , Amount: 0.75 oz, Garnish: , Glass: Collins
+Row Drink: Pineapple Rum Noir, Mixer: Strawberry Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Simple Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Rum, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Pinapple, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Mint Sprig, Glass: 
+Row Drink: Cosm-Politan, Mixer: Crannberry Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: Martini
+Row Drink: Cosm-Politan, Mixer: Lime Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: Batch, Amount: 2.75 oz, Garnish: , Glass: 127.0.0.1 - - [27/Jul/2025 13:24:00] "POST /check_answer/Margarita HTTP/1.1" 200 -
+127.0.0.1 - - [27/Jul/2025 13:24:07] "POST /check_answer/Margarita HTTP/1.1" 200 -
+
+Row Drink: Cosm-Politan, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Dragon Fruit, Glass: 
+Row Drink: Spicy Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Rocks
+Row Drink: Spicy Margarita, Mixer: , Spirit: Agave, Amount: .75 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Spicy Tequila, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Big D Margarita, Mixer: Lime Juice, Spirit: , Amount: 1 oz, Garnish: , Glass: Scooners
+Row Drink: Big D Margarita, Mixer: , Spirit: Agave, Amount: 1oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Socorro Blanco Tequila, Amount: 3 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: Simple Syrup, Spirit: , Amount: 0.25 oz, Garnish: , Glass: Rocks
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Batch, Amount: 2.5 oz, Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Black Walnut Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Orange Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: , Amount: , Garnish: Orange Peel, Glass: 
+Row Drink: Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Margarita
+Row Drink: Margarita, Mixer: , Spirit: Triple Sec, Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: Tequila, Amount: 2.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Pineapple Juice, Spirit: , Amount: 0.75 oz, Garnish: , Glass: Collins
+Row Drink: Pineapple Rum Noir, Mixer: Strawberry Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Simple Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Rum, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Pinapple, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Mint Sprig, Glass: 
+Row Drink: Cosm-Politan, Mixer: Crannberry Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: Martini
+Row Drink: Cosm-Politan, Mixer: Lime Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: Batch, Amount: 2.75 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Dragon Fruit, Glass: 
+Row Drink: Spicy Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Rocks
+Row Drink: Spicy Margarita, Mixer: , Spirit: Agave, Amount: .75 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Spicy Tequila, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Big D Margarita, Mixer: Lime Juice, Spirit: , Amount: 1 oz, Garnish: , Glass: Scooners
+Row Drink: Big D Margarita, Mixer: , Spirit: Agave, Amount: 1oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Socorro Blanco Tequila, Amount: 3 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: Simple Syrup, Spirit: , Amount: 0.25 oz, Garnish: , Glass: Rocks
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Batch, Amount: 2.5 oz, Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Black Walnut Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Orange Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: , Amount: , Garnish: Orange Peel, Glass: 
+Row Drink: Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Margarita
+Row Drink: Margarita, Mixer: , Spirit: Triple Sec, Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: Tequila, Amount: 2.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Pineapple Juice, Spirit: , Amount: 0.75 oz, Garnish: , Glass: Collins
+Row Drink: Pineapple Rum Noir, Mixer: Strawberry Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Simple Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Rum, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Pinapple, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Mint Sprig, Glass: 
+Row Drink: Cosm-Politan, Mixer: Crannberry Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: Martini
+Row Drink: Cosm-Politan, Mixer: Lime Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: Batch, Amount: 2.75 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Dragon Fruit, Glass: 
+Row Drink: Spicy Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Rocks
+Row Drink: Spicy Margarita, Mixer: , Spirit: Agave, Amount: .75 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Spicy Tequila, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Big D Margarita, Mixer: Lime Juice, Spirit: , Amount: 1 oz, Garnish: , Glass: Scooners
+Row Drink: Big D Margarita, Mixer: , Spirit: Agave, Amount: 1oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Socorro Blanco Tequila, Amount: 3 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: Simple Syrup, Spirit: , Amount: 0.25 oz, Garnish: , Glass: Rocks
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Batch, Amount: 2.5 oz, Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Black Walnut Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Orange Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: , Amount: , Garnish: Orange Peel, Glass: 
+Row Drink: Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Margarita
+Row Drink: Margarita, Mixer: , Spirit: Triple Sec, Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: Tequila, Amount: 2.0 oz, Garnish: , Glass: 127.0.0.1 - - [27/Jul/2025 13:24:45] "GET /train/Margarita HTTP/1.1" 200 -
+127.0.0.1 - - [27/Jul/2025 13:25:03] "POST /check_answer/Margarita HTTP/1.1" 200 -
+
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Pineapple Juice, Spirit: , Amount: 0.75 oz, Garnish: , Glass: Collins
+Row Drink: Pineapple Rum Noir, Mixer: Strawberry Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Simple Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Rum, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Pinapple, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Mint Sprig, Glass: 
+Row Drink: Cosm-Politan, Mixer: Crannberry Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: Martini
+Row Drink: Cosm-Politan, Mixer: Lime Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: Batch, Amount: 2.75 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Dragon Fruit, Glass: 
+Row Drink: Spicy Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Rocks
+Row Drink: Spicy Margarita, Mixer: , Spirit: Agave, Amount: .75 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Spicy Tequila, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Big D Margarita, Mixer: Lime Juice, Spirit: , Amount: 1 oz, Garnish: , Glass: Scooners
+Row Drink: Big D Margarita, Mixer: , Spirit: Agave, Amount: 1oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Socorro Blanco Tequila, Amount: 3 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: Simple Syrup, Spirit: , Amount: 0.25 oz, Garnish: , Glass: Rocks
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Batch, Amount: 2.5 oz, Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Black Walnut Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Orange Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: , Amount: , Garnish: Orange Peel, Glass: 
+Row Drink: Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Margarita
+Row Drink: Margarita, Mixer: , Spirit: Triple Sec, Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: Tequila, Amount: 2.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Pineapple Juice, Spirit: , Amount: 0.75 oz, Garnish: , Glass: Collins
+Row Drink: Pineapple Rum Noir, Mixer: Strawberry Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Simple Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Rum, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Pinapple, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Mint Sprig, Glass: 
+Row Drink: Cosm-Politan, Mixer: Crannberry Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: Martini
+Row Drink: Cosm-Politan, Mixer: Lime Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: Batch, Amount: 2.75 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Dragon Fruit, Glass: 
+Row Drink: Spicy Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Rocks
+Row Drink: Spicy Margarita, Mixer: , Spirit: Agave, Amount: .75 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Spicy Tequila, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Big D Margarita, Mixer: Lime Juice, Spirit: , Amount: 1 oz, Garnish: , Glass: Scooners
+Row Drink: Big D Margarita, Mixer: , Spirit: Agave, Amount: 1oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Socorro Blanco Tequila, Amount: 3 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: Simple Syrup, Spirit: , Amount: 0.25 oz, Garnish: , Glass: Rocks
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Batch, Amount: 2.5 oz, Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Black Walnut Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Orange Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: , Amount: , Garnish: Orange Peel, Glass: 
+Row Drink: Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Margarita
+Row Drink: Margarita, Mixer: , Spirit: Triple Sec, Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: Tequila, Amount: 2.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Pineapple Juice, Spirit: , Amount: 0.75 oz, Garnish: , Glass: Collins
+Row Drink: Pineapple Rum Noir, Mixer: Strawberry Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Simple Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Rum, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Pinapple, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Mint Sprig, Glass: 
+Row Drink: Cosm-Politan, Mixer: Crannberry Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: Martini
+Row Drink: Cosm-Politan, Mixer: Lime Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: Batch, Amount: 2.75 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Dragon Fruit, Glass: 
+Row Drink: Spicy Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Rocks
+Row Drink: Spicy Margarita, Mixer: , Spirit: Agave, Amount: .75 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Spicy Tequila, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Big D Margarita, Mixer: Lime Juice, Spirit: , Amount: 1 oz, Garnish: , Glass: Scooners127.0.0.1 - - [27/Jul/2025 13:25:09] "GET /select_drink HTTP/1.1" 200 -
+127.0.0.1 - - [27/Jul/2025 13:25:09] "[36mGET /select_drink?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [27/Jul/2025 13:25:09] "[36mGET /select_drink?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [27/Jul/2025 13:25:09] "[36mGET /select_drink?__debugger__=yes&cmd=resource&f=console.png&s=nMZFMmIqQKXXyapmEyil HTTP/1.1[0m" 304 -
+127.0.0.1 - - [27/Jul/2025 13:25:09] "[36mGET /select_drink?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [27/Jul/2025 13:25:12] "GET /home HTTP/1.1" 200 -
+127.0.0.1 - - [27/Jul/2025 13:25:14] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2025 10:09:29] "[32mPOST /set_venue HTTP/1.1[0m" 302 -
+127.0.0.1 - - [31/Jul/2025 10:09:29] "GET /home HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2025 10:09:33] "GET /select_drink HTTP/1.1" 200 -
+
+Row Drink: Big D Margarita, Mixer: , Spirit: Agave, Amount: 1oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Socorro Blanco Tequila, Amount: 3 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: Simple Syrup, Spirit: , Amount: 0.25 oz, Garnish: , Glass: Rocks
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Batch, Amount: 2.5 oz, Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Black Walnut Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Orange Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: , Amount: , Garnish: Orange Peel, Glass: 
+Row Drink: Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Margarita
+Row Drink: Margarita, Mixer: , Spirit: Triple Sec, Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: Tequila, Amount: 2.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Pineapple Juice, Spirit: , Amount: 0.75 oz, Garnish: , Glass: Collins
+Row Drink: Pineapple Rum Noir, Mixer: Strawberry Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Simple Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Rum, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Pinapple, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Mint Sprig, Glass: 
+Row Drink: Cosm-Politan, Mixer: Crannberry Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: Martini
+Row Drink: Cosm-Politan, Mixer: Lime Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: Batch, Amount: 2.75 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Dragon Fruit, Glass: 
+Row Drink: Spicy Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Rocks
+Row Drink: Spicy Margarita, Mixer: , Spirit: Agave, Amount: .75 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Spicy Tequila, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Big D Margarita, Mixer: Lime Juice, Spirit: , Amount: 1 oz, Garnish: , Glass: Scooners
+Row Drink: Big D Margarita, Mixer: , Spirit: Agave, Amount: 1oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Socorro Blanco Tequila, Amount: 3 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: Simple Syrup, Spirit: , Amount: 0.25 oz, Garnish: , Glass: Rocks
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Batch, Amount: 2.5 oz, Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Black Walnut Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Orange Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: , Amount: , Garnish: Orange Peel, Glass: 
+Row Drink: Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Margarita
+Row Drink: Margarita, Mixer: , Spirit: Triple Sec, Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: Tequila, Amount: 2.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Pineapple Juice, Spirit: , Amount: 0.75 oz, Garnish: , Glass: Collins
+Row Drink: Pineapple Rum Noir, Mixer: Strawberry Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Simple Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Rum, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Pinapple, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Mint Sprig, Glass: 
+Row Drink: Cosm-Politan, Mixer: Crannberry Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: Martini
+Row Drink: Cosm-Politan, Mixer: Lime Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: Batch, Amount: 2.75 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Dragon Fruit, Glass: 
+Row Drink: Spicy Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Rocks
+Row Drink: Spicy Margarita, Mixer: , Spirit: Agave, Amount: .75 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Spicy Tequila, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Big D Margarita, Mixer: Lime Juice, Spirit: , Amount: 1 oz, Garnish: , Glass: Scooners
+Row Drink: Big D Margarita, Mixer: , Spirit: Agave, Amount: 1oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Socorro Blanco Tequila, Amount: 3 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: Simple Syrup, Spirit: , Amount: 0.25 oz, Garnish: , Glass: Rocks
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Batch, Amount: 2.5 oz, Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Black Walnut Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Orange Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: , Amount: , Garnish: Orange Peel, Glass: 
+Row Drink: Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Margarita
+Row Drink: Margarita, Mixer: , Spirit: Triple Sec, Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: Tequila, Amount: 2.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Pineapple Juice, Spirit: , Amount: 0.75 oz, Garnish: , Glass: Collins
+Row Drink: Pineapple Rum Noir, Mixer: Strawberry Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Simple Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Rum, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Bitters, Amount: , Garnish: , Glass: 127.0.0.1 - - [31/Jul/2025 10:09:36] "GET /train/Margarita HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2025 10:09:39] "GET /select_drink HTTP/1.1" 200 -
+ * Detected change in '/Users/Shared/Python Learning/Bartending/app.py', reloading
+
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Pinapple, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Mint Sprig, Glass: 
+Row Drink: Cosm-Politan, Mixer: Crannberry Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: Martini
+Row Drink: Cosm-Politan, Mixer: Lime Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: Batch, Amount: 2.75 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Dragon Fruit, Glass: 
+Row Drink: Spicy Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Rocks
+Row Drink: Spicy Margarita, Mixer: , Spirit: Agave, Amount: .75 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Spicy Tequila, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Big D Margarita, Mixer: Lime Juice, Spirit: , Amount: 1 oz, Garnish: , Glass: Scooners
+Row Drink: Big D Margarita, Mixer: , Spirit: Agave, Amount: 1oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Socorro Blanco Tequila, Amount: 3 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: Simple Syrup, Spirit: , Amount: 0.25 oz, Garnish: , Glass: Rocks
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Batch, Amount: 2.5 oz, Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Black Walnut Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Orange Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: , Amount: , Garnish: Orange Peel, Glass: 
+Row Drink: Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Margarita
+Row Drink: Margarita, Mixer: , Spirit: Triple Sec, Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: Tequila, Amount: 2.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Pineapple Juice, Spirit: , Amount: 0.75 oz, Garnish: , Glass: Collins
+Row Drink: Pineapple Rum Noir, Mixer: Strawberry Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Simple Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Rum, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Pinapple, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Mint Sprig, Glass: 
+Row Drink: Cosm-Politan, Mixer: Crannberry Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: Martini
+Row Drink: Cosm-Politan, Mixer: Lime Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: Batch, Amount: 2.75 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Dragon Fruit, Glass: 
+Row Drink: Spicy Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Rocks
+Row Drink: Spicy Margarita, Mixer: , Spirit: Agave, Amount: .75 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Spicy Tequila, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Big D Margarita, Mixer: Lime Juice, Spirit: , Amount: 1 oz, Garnish: , Glass: Scooners
+Row Drink: Big D Margarita, Mixer: , Spirit: Agave, Amount: 1oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Socorro Blanco Tequila, Amount: 3 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: Simple Syrup, Spirit: , Amount: 0.25 oz, Garnish: , Glass: Rocks
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Batch, Amount: 2.5 oz, Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Black Walnut Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Orange Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: , Amount: , Garnish: Orange Peel, Glass: 
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 397-393-718
+127.0.0.1 - - [31/Jul/2025 10:16:36] "GET /select_drink HTTP/1.1" 200 -
+Current working directory: /Users/Shared/Python Learning/Bartending
+Row Drink: Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Margarita
+Row Drink: Margarita, Mixer: , Spirit: Triple Sec, Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: Tequila, Amount: 2.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Pineapple Juice, Spirit: , Amount: 0.75 oz, Garnish: , Glass: Collins
+Row Drink: Pineapple Rum Noir, Mixer: Strawberry Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Simple Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Rum, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Pinapple, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Mint Sprig, Glass: 
+Row Drink: Cosm-Politan, Mixer: Crannberry Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: Martini
+Row Drink: Cosm-Politan, Mixer: Lime Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: Batch, Amount: 2.75 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Dragon Fruit, Glass: 
+Row Drink: Spicy Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Rocks
+Row Drink: Spicy Margarita, Mixer: , Spirit: Agave, Amount: .75 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Spicy Tequila, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Big D Margarita, Mixer: Lime Juice, Spirit: , Amount: 1 oz, Garnish: , Glass: Scooners
+Row Drink: Big D Margarita, Mixer: , Spirit: Agave, Amount: 1oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Socorro Blanco Tequila, Amount: 3 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: Simple Syrup, Spirit: , Amount: 0.25 oz, Garnish: , Glass: Rocks
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Batch, Amount: 2.5 oz, Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Black Walnut Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Orange Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: , Amount: , Garnish: Orange Peel, Glass: 
+Row Drink: Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Margarita
+Row Drink: Margarita, Mixer: , Spirit: Triple Sec, Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: Tequila, Amount: 2.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Pineapple Juice, Spirit: , Amount: 0.75 oz, Garnish: , Glass: Collins
+Row Drink: Pineapple Rum Noir, Mixer: Strawberry Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Simple Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Rum, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Pinapple, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Mint Sprig, Glass: 
+Row Drink: Cosm-Politan, Mixer: Crannberry Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: Martini
+Row Drink: Cosm-Politan, Mixer: Lime Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: Batch, Amount: 2.75 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Dragon Fruit, Glass: 
+Row Drink: Spicy Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Rocks
+Row Drink: Spicy Margarita, Mixer: , Spirit: Agave, Amount: .75 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Spicy Tequila, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Big D Margarita, Mixer: Lime Juice, Spirit: , Amount: 1 oz, Garnish: , Glass: Scooners
+Row Drink: Big D Margarita, Mixer: , Spirit: Agave, Amount: 1oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Socorro Blanco Tequila, Amount: 3 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: Simple Syrup, Spirit: , Amount: 0.25 oz, Garnish: , Glass: Rocks
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Batch, Amount: 2.5 oz, Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Black Walnut Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Orange Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: , Amount: , Garnish: Orange Peel, Glass: 
+Row Drink: Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Margarita
+Row Drink: Margarita, Mixer: , Spirit: Triple Sec, Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: Tequila, Amount: 2.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Pineapple Juice, Spirit: , Amount: 0.75 oz, Garnish: , Glass: Collins
+Row Drink: Pineapple Rum Noir, Mixer: Strawberry Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Simple Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Rum, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Pinapple, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Mint Sprig, Glass: 
+Row Drink: Cosm-Politan, Mixer: Crannberry Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: Martini
+Row Drink: Cosm-Politan, Mixer: Lime Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: Batch, Amount: 2.75 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Dragon Fruit, Glass: 
+Row Drink: Spicy Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Rocks
+Row Drink: Spicy Margarita, Mixer: , Spirit: Agave, Amount: .75 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Spicy Tequila, Amount: 1.5 oz, Garnish: , Glass: 127.0.0.1 - - [31/Jul/2025 10:16:39] "GET /train/Margarita HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2025 10:16:59] "[35m[1mPOST /check_answer/Margarita HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/flask/app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/Shared/Python Learning/Bartending/app.py", line 322, in check_answer
+    is_correct = check_user_answer_flexible(user_steps, correct_steps)
+  File "/Users/Shared/Python Learning/Bartending/app.py", line 261, in check_user_answer_flexible
+    mixers = [step.split(" - ")[0] for step in correct_steps if " - " in step][:len(drink_data.get("mixers", []))]
+                                                                                    ^^^^^^^^^^
+NameError: name 'drink_data' is not defined. Did you mean: 'get_drink_data'?
+127.0.0.1 - - [31/Jul/2025 10:17:32] "[35m[1mPOST /check_answer/Margarita HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/flask/app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/Shared/Python Learning/Bartending/app.py", line 322, in check_answer
+    is_correct = check_user_answer_flexible(user_steps, correct_steps)
+  File "/Users/Shared/Python Learning/Bartending/app.py", line 261, in check_user_answer_flexible
+    mixers = [step.split(" - ")[0] for step in correct_steps if " - " in step][:len(drink_data.get("mixers", []))]
+                                                                                    ^^^^^^^^^^
+NameError: name 'drink_data' is not defined. Did you mean: 'get_drink_data'?
+ * Detected change in '/Users/Shared/Python Learning/Bartending/app.py', reloading
+
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Big D Margarita, Mixer: Lime Juice, Spirit: , Amount: 1 oz, Garnish: , Glass: Scooners
+Row Drink: Big D Margarita, Mixer: , Spirit: Agave, Amount: 1oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Socorro Blanco Tequila, Amount: 3 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: Simple Syrup, Spirit: , Amount: 0.25 oz, Garnish: , Glass: Rocks
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Batch, Amount: 2.5 oz, Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Black Walnut Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Orange Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: , Amount: , Garnish: Orange Peel, Glass: 
+Row Drink: Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Margarita
+Row Drink: Margarita, Mixer: , Spirit: Triple Sec, Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: Tequila, Amount: 2.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Pineapple Juice, Spirit: , Amount: 0.75 oz, Garnish: , Glass: Collins
+Row Drink: Pineapple Rum Noir, Mixer: Strawberry Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Simple Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Rum, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Pinapple, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Mint Sprig, Glass: 
+Row Drink: Cosm-Politan, Mixer: Crannberry Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: Martini
+Row Drink: Cosm-Politan, Mixer: Lime Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: Batch, Amount: 2.75 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Dragon Fruit, Glass: 
+Row Drink: Spicy Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Rocks
+Row Drink: Spicy Margarita, Mixer: , Spirit: Agave, Amount: .75 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Spicy Tequila, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Big D Margarita, Mixer: Lime Juice, Spirit: , Amount: 1 oz, Garnish: , Glass: Scooners
+Row Drink: Big D Margarita, Mixer: , Spirit: Agave, Amount: 1oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Socorro Blanco Tequila, Amount: 3 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: Simple Syrup, Spirit: , Amount: 0.25 oz, Garnish: , Glass: Rocks
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Batch, Amount: 2.5 oz, Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Black Walnut Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Orange Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: , Amount: , Garnish: Orange Peel, Glass: 
+Row Drink: Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Margarita
+Row Drink: Margarita, Mixer: , Spirit: Triple Sec, Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: Tequila, Amount: 2.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Pineapple Juice, Spirit: , Amount: 0.75 oz, Garnish: , Glass: Collins
+Row Drink: Pineapple Rum Noir, Mixer: Strawberry Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Simple Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Rum, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Pinapple, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Mint Sprig, Glass: 
+Row Drink: Cosm-Politan, Mixer: Crannberry Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: Martini
+Row Drink: Cosm-Politan, Mixer: Lime Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: Batch, Amount: 2.75 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Dragon Fruit, Glass: 
+Row Drink: Spicy Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Rocks
+Row Drink: Spicy Margarita, Mixer: , Spirit: Agave, Amount: .75 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Spicy Tequila, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Big D Margarita, Mixer: Lime Juice, Spirit: , Amount: 1 oz, Garnish: , Glass: Scooners
+Row Drink: Big D Margarita, Mixer: , Spirit: Agave, Amount: 1oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Socorro Blanco Tequila, Amount: 3 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: Simple Syrup, Spirit: , Amount: 0.25 oz, Garnish: , Glass: Rocks
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Batch, Amount: 2.5 oz, Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Black Walnut Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Orange Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: , Amount: , Garnish: Orange Peel, Glass: 
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 397-393-718
+127.0.0.1 - - [31/Jul/2025 10:21:09] "GET /train/Margarita HTTP/1.1" 200 -
+Current working directory: /Users/Shared/Python Learning/Bartending
+Row Drink: Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Margarita
+Row Drink: Margarita, Mixer: , Spirit: Triple Sec, Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: Tequila, Amount: 2.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Pineapple Juice, Spirit: , Amount: 0.75 oz, Garnish: , Glass: Collins
+Row Drink: Pineapple Rum Noir, Mixer: Strawberry Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Simple Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Rum, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Pinapple, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Mint Sprig, Glass: 
+Row Drink: Cosm-Politan, Mixer: Crannberry Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: Martini
+Row Drink: Cosm-Politan, Mixer: Lime Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: Batch, Amount: 2.75 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Dragon Fruit, Glass: 
+Row Drink: Spicy Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Rocks
+Row Drink: Spicy Margarita, Mixer: , Spirit: Agave, Amount: .75 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Spicy Tequila, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Big D Margarita, Mixer: Lime Juice, Spirit: , Amount: 1 oz, Garnish: , Glass: Scooners
+Row Drink: Big D Margarita, Mixer: , Spirit: Agave, Amount: 1oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Socorro Blanco Tequila, Amount: 3 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: Simple Syrup, Spirit: , Amount: 0.25 oz, Garnish: , Glass: Rocks
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Batch, Amount: 2.5 oz, Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Black Walnut Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Orange Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: , Amount: , Garnish: Orange Peel, Glass: 
+Row Drink: Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Margarita
+Row Drink: Margarita, Mixer: , Spirit: Triple Sec, Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: Tequila, Amount: 2.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Pineapple Juice, Spirit: , Amount: 0.75 oz, Garnish: , Glass: Collins
+Row Drink: Pineapple Rum Noir, Mixer: Strawberry Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Simple Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Rum, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Pinapple, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Mint Sprig, Glass: 
+Row Drink: Cosm-Politan, Mixer: Crannberry Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: Martini
+Row Drink: Cosm-Politan, Mixer: Lime Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: Batch, Amount: 2.75 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Dragon Fruit, Glass: 
+Row Drink: Spicy Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Rocks
+Row Drink: Spicy Margarita, Mixer: , Spirit: Agave, Amount: .75 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Spicy Tequila, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Big D Margarita, Mixer: Lime Juice, Spirit: , Amount: 1 oz, Garnish: , Glass: Scooners
+Row Drink: Big D Margarita, Mixer: , Spirit: Agave, Amount: 1oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Socorro Blanco Tequila, Amount: 3 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: Simple Syrup, Spirit: , Amount: 0.25 oz, Garnish: , Glass: Rocks
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Batch, Amount: 2.5 oz, Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Black Walnut Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Orange Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: , Amount: , Garnish: Orange Peel, Glass: 
+Row Drink: Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Margarita
+Row Drink: Margarita, Mixer: , Spirit: Triple Sec, Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: Tequila, Amount: 2.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Pineapple Juice, Spirit: , Amount: 0.75 oz, Garnish: , Glass: Collins
+Row Drink: Pineapple Rum Noir, Mixer: Strawberry Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Simple Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Rum, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Pinapple, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Mint Sprig, Glass: 
+Row Drink: Cosm-Politan, Mixer: Crannberry Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: Martini
+Row Drink: Cosm-Politan, Mixer: Lime Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: Batch, Amount: 2.75 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Dragon Fruit, Glass: 
+Row Drink: Spicy Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Rocks
+Row Drink: Spicy Margarita, Mixer: , Spirit: Agave, Amount: .75 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Spicy Tequila, Amount: 1.5 oz, Garnish: , Glass: 127.0.0.1 - - [31/Jul/2025 10:21:27] "[35m[1mPOST /check_answer/Margarita HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/flask/app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/Shared/Python Learning/Bartending/app.py", line 322, in check_answer
+    is_correct = check_user_answer_flexible(user_steps, correct_steps)
+TypeError: check_user_answer_flexible() missing 1 required positional argument: 'drink_data'
+ * Detected change in '/Users/Shared/Python Learning/Bartending/app.py', reloading
+
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Big D Margarita, Mixer: Lime Juice, Spirit: , Amount: 1 oz, Garnish: , Glass: Scooners
+Row Drink: Big D Margarita, Mixer: , Spirit: Agave, Amount: 1oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Socorro Blanco Tequila, Amount: 3 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: Simple Syrup, Spirit: , Amount: 0.25 oz, Garnish: , Glass: Rocks
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Batch, Amount: 2.5 oz, Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Black Walnut Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Orange Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: , Amount: , Garnish: Orange Peel, Glass: 
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 397-393-718
+127.0.0.1 - - [31/Jul/2025 10:22:00] "GET /train/Margarita HTTP/1.1" 200 -
+Current working directory: /Users/Shared/Python Learning/Bartending
+Row Drink: Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Margarita
+Row Drink: Margarita, Mixer: , Spirit: Triple Sec, Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: Tequila, Amount: 2.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Pineapple Juice, Spirit: , Amount: 0.75 oz, Garnish: , Glass: Collins
+Row Drink: Pineapple Rum Noir, Mixer: Strawberry Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Simple Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Rum, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Pinapple, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Mint Sprig, Glass: 
+Row Drink: Cosm-Politan, Mixer: Crannberry Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: Martini
+Row Drink: Cosm-Politan, Mixer: Lime Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: Batch, Amount: 2.75 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Dragon Fruit, Glass: 
+Row Drink: Spicy Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Rocks
+Row Drink: Spicy Margarita, Mixer: , Spirit: Agave, Amount: .75 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Spicy Tequila, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Big D Margarita, Mixer: Lime Juice, Spirit: , Amount: 1 oz, Garnish: , Glass: Scooners
+Row Drink: Big D Margarita, Mixer: , Spirit: Agave, Amount: 1oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Socorro Blanco Tequila, Amount: 3 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: Simple Syrup, Spirit: , Amount: 0.25 oz, Garnish: , Glass: Rocks
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Batch, Amount: 2.5 oz, Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Black Walnut Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Orange Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: , Amount: , Garnish: Orange Peel, Glass: 
+Row Drink: Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Margarita
+Row Drink: Margarita, Mixer: , Spirit: Triple Sec, Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: Tequila, Amount: 2.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Pineapple Juice, Spirit: , Amount: 0.75 oz, Garnish: , Glass: Collins
+Row Drink: Pineapple Rum Noir, Mixer: Strawberry Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Simple Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Rum, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Pinapple, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Mint Sprig, Glass: 
+Row Drink: Cosm-Politan, Mixer: Crannberry Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: Martini
+Row Drink: Cosm-Politan, Mixer: Lime Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: Batch, Amount: 2.75 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Dragon Fruit, Glass: 
+Row Drink: Spicy Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Rocks
+Row Drink: Spicy Margarita, Mixer: , Spirit: Agave, Amount: .75 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Spicy Tequila, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Big D Margarita, Mixer: Lime Juice, Spirit: , Amount: 1 oz, Garnish: , Glass: Scooners
+Row Drink: Big D Margarita, Mixer: , Spirit: Agave, Amount: 1oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Socorro Blanco Tequila, Amount: 3 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: Simple Syrup, Spirit: , Amount: 0.25 oz, Garnish: , Glass: Rocks
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Batch, Amount: 2.5 oz, Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Black Walnut Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Orange Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: , Amount: , Garnish: Orange Peel, Glass: 
+Row Drink: Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Margarita
+Row Drink: Margarita, Mixer: , Spirit: Triple Sec, Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: Tequila, Amount: 2.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Pineapple Juice, Spirit: , Amount: 0.75 oz, Garnish: , Glass: Collins
+Row Drink: Pineapple Rum Noir, Mixer: Strawberry Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Simple Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Rum, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Pinapple, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Mint Sprig, Glass: 
+Row Drink: Cosm-Politan, Mixer: Crannberry Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: Martini
+Row Drink: Cosm-Politan, Mixer: Lime Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: Batch, Amount: 2.75 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Dragon Fruit, Glass: 
+Row Drink: Spicy Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Rocks
+Row Drink: Spicy Margarita, Mixer: , Spirit: Agave, Amount: .75 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Spicy Tequila, Amount: 1.5 oz, Garnish: , Glass: 127.0.0.1 - - [31/Jul/2025 10:22:16] "[35m[1mPOST /check_answer/Margarita HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/flask/app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/Shared/Python Learning/Bartending/app.py", line 323, in check_answer
+    is_correct = check_user_answer_flexible(user_steps, correct_steps)
+TypeError: check_user_answer_flexible() missing 1 required positional argument: 'drink_data'
+ * Detected change in '/Users/Shared/Python Learning/Bartending/app.py', reloading
+
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Big D Margarita, Mixer: Lime Juice, Spirit: , Amount: 1 oz, Garnish: , Glass: Scooners
+Row Drink: Big D Margarita, Mixer: , Spirit: Agave, Amount: 1oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Socorro Blanco Tequila, Amount: 3 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: Simple Syrup, Spirit: , Amount: 0.25 oz, Garnish: , Glass: Rocks
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Batch, Amount: 2.5 oz, Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Black Walnut Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Orange Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: , Amount: , Garnish: Orange Peel, Glass: 
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 397-393-718
+127.0.0.1 - - [31/Jul/2025 10:23:51] "GET /train/Margarita HTTP/1.1" 200 -
+Current working directory: /Users/Shared/Python Learning/Bartending
+Row Drink: Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Margarita
+Row Drink: Margarita, Mixer: , Spirit: Triple Sec, Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: Tequila, Amount: 2.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Pineapple Juice, Spirit: , Amount: 0.75 oz, Garnish: , Glass: Collins
+Row Drink: Pineapple Rum Noir, Mixer: Strawberry Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Simple Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Rum, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Pinapple, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Mint Sprig, Glass: 
+Row Drink: Cosm-Politan, Mixer: Crannberry Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: Martini
+Row Drink: Cosm-Politan, Mixer: Lime Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: Batch, Amount: 2.75 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Dragon Fruit, Glass: 
+Row Drink: Spicy Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Rocks
+Row Drink: Spicy Margarita, Mixer: , Spirit: Agave, Amount: .75 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Spicy Tequila, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Big D Margarita, Mixer: Lime Juice, Spirit: , Amount: 1 oz, Garnish: , Glass: Scooners
+Row Drink: Big D Margarita, Mixer: , Spirit: Agave, Amount: 1oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Socorro Blanco Tequila, Amount: 3 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: Simple Syrup, Spirit: , Amount: 0.25 oz, Garnish: , Glass: Rocks
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Batch, Amount: 2.5 oz, Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Black Walnut Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Orange Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: , Amount: , Garnish: Orange Peel, Glass: 
+Row Drink: Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Margarita
+Row Drink: Margarita, Mixer: , Spirit: Triple Sec, Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: Tequila, Amount: 2.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Pineapple Juice, Spirit: , Amount: 0.75 oz, Garnish: , Glass: Collins
+Row Drink: Pineapple Rum Noir, Mixer: Strawberry Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Simple Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Rum, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Pinapple, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Mint Sprig, Glass: 
+Row Drink: Cosm-Politan, Mixer: Crannberry Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: Martini
+Row Drink: Cosm-Politan, Mixer: Lime Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: Batch, Amount: 2.75 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Dragon Fruit, Glass: 
+Row Drink: Spicy Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Rocks
+Row Drink: Spicy Margarita, Mixer: , Spirit: Agave, Amount: .75 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Spicy Tequila, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Big D Margarita, Mixer: Lime Juice, Spirit: , Amount: 1 oz, Garnish: , Glass: Scooners
+Row Drink: Big D Margarita, Mixer: , Spirit: Agave, Amount: 1oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Socorro Blanco Tequila, Amount: 3 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: Simple Syrup, Spirit: , Amount: 0.25 oz, Garnish: , Glass: Rocks
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Batch, Amount: 2.5 oz, Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Black Walnut Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Orange Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: , Amount: , Garnish: Orange Peel, Glass: 
+Row Drink: Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Margarita
+Row Drink: Margarita, Mixer: , Spirit: Triple Sec, Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: Tequila, Amount: 2.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Pineapple Juice, Spirit: , Amount: 0.75 oz, Garnish: , Glass: Collins
+Row Drink: Pineapple Rum Noir, Mixer: Strawberry Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Simple Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Rum, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Pinapple, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Mint Sprig, Glass: 
+Row Drink: Cosm-Politan, Mixer: Crannberry Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: Martini
+Row Drink: Cosm-Politan, Mixer: Lime Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: Batch, Amount: 2.75 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Dragon Fruit, Glass: 
+Row Drink: Spicy Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Rocks
+Row Drink: Spicy Margarita, Mixer: , Spirit: Agave, Amount: .75 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Spicy Tequila, Amount: 1.5 oz, Garnish: , Glass: 127.0.0.1 - - [31/Jul/2025 10:24:06] "POST /check_answer/Margarita HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2025 10:24:24] "POST /check_answer/Margarita HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2025 10:24:30] "POST /check_answer/Margarita HTTP/1.1" 200 -
+
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Big D Margarita, Mixer: Lime Juice, Spirit: , Amount: 1 oz, Garnish: , Glass: Scooners
+Row Drink: Big D Margarita, Mixer: , Spirit: Agave, Amount: 1oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Socorro Blanco Tequila, Amount: 3 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: Simple Syrup, Spirit: , Amount: 0.25 oz, Garnish: , Glass: Rocks
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Batch, Amount: 2.5 oz, Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Black Walnut Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Orange Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: , Amount: , Garnish: Orange Peel, Glass: 
+Row Drink: Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Margarita
+Row Drink: Margarita, Mixer: , Spirit: Triple Sec, Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: Tequila, Amount: 2.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Pineapple Juice, Spirit: , Amount: 0.75 oz, Garnish: , Glass: Collins
+Row Drink: Pineapple Rum Noir, Mixer: Strawberry Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Simple Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Rum, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Pinapple, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Mint Sprig, Glass: 
+Row Drink: Cosm-Politan, Mixer: Crannberry Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: Martini
+Row Drink: Cosm-Politan, Mixer: Lime Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: Batch, Amount: 2.75 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Dragon Fruit, Glass: 
+Row Drink: Spicy Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Rocks
+Row Drink: Spicy Margarita, Mixer: , Spirit: Agave, Amount: .75 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Spicy Tequila, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Big D Margarita, Mixer: Lime Juice, Spirit: , Amount: 1 oz, Garnish: , Glass: Scooners
+Row Drink: Big D Margarita, Mixer: , Spirit: Agave, Amount: 1oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Socorro Blanco Tequila, Amount: 3 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: Simple Syrup, Spirit: , Amount: 0.25 oz, Garnish: , Glass: Rocks
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Batch, Amount: 2.5 oz, Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Black Walnut Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Orange Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: , Amount: , Garnish: Orange Peel, Glass: 
+Row Drink: Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Margarita
+Row Drink: Margarita, Mixer: , Spirit: Triple Sec, Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: Tequila, Amount: 2.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Pineapple Juice, Spirit: , Amount: 0.75 oz, Garnish: , Glass: Collins
+Row Drink: Pineapple Rum Noir, Mixer: Strawberry Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Simple Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Rum, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Pinapple, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Mint Sprig, Glass: 
+Row Drink: Cosm-Politan, Mixer: Crannberry Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: Martini
+Row Drink: Cosm-Politan, Mixer: Lime Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: Batch, Amount: 2.75 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Dragon Fruit, Glass: 
+Row Drink: Spicy Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Rocks
+Row Drink: Spicy Margarita, Mixer: , Spirit: Agave, Amount: .75 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Spicy Tequila, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Big D Margarita, Mixer: Lime Juice, Spirit: , Amount: 1 oz, Garnish: , Glass: Scooners
+Row Drink: Big D Margarita, Mixer: , Spirit: Agave, Amount: 1oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Socorro Blanco Tequila, Amount: 3 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: Simple Syrup, Spirit: , Amount: 0.25 oz, Garnish: , Glass: Rocks
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Batch, Amount: 2.5 oz, Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Black Walnut Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Orange Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: , Amount: , Garnish: Orange Peel, Glass: 
+Row Drink: Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Margarita
+Row Drink: Margarita, Mixer: , Spirit: Triple Sec, Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: Tequila, Amount: 2.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Pineapple Juice, Spirit: , Amount: 0.75 oz, Garnish: , Glass: Collins
+Row Drink: Pineapple Rum Noir, Mixer: Strawberry Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: 127.0.0.1 - - [31/Jul/2025 14:00:32] "GET /select_drink HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2025 14:00:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [31/Jul/2025 14:00:33] "GET /home HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2025 14:00:35] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2025 14:01:19] "[32mPOST /set_venue HTTP/1.1[0m" 302 -
+127.0.0.1 - - [31/Jul/2025 14:01:19] "GET /home HTTP/1.1" 200 -
+127.0.0.1 - - [31/Jul/2025 14:01:22] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [01/Aug/2025 12:55:53] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [01/Aug/2025 12:55:59] "[32mPOST /set_venue HTTP/1.1[0m" 302 -
+127.0.0.1 - - [01/Aug/2025 12:55:59] "GET /home HTTP/1.1" 200 -
+127.0.0.1 - - [01/Aug/2025 12:56:01] "GET /refresher HTTP/1.1" 200 -
+127.0.0.1 - - [01/Aug/2025 12:56:07] "GET /home HTTP/1.1" 200 -
+
+Row Drink: Pineapple Rum Noir, Mixer: Simple Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Rum, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Pinapple, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Mint Sprig, Glass: 
+Row Drink: Cosm-Politan, Mixer: Crannberry Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: Martini
+Row Drink: Cosm-Politan, Mixer: Lime Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: Batch, Amount: 2.75 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Dragon Fruit, Glass: 
+Row Drink: Spicy Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Rocks
+Row Drink: Spicy Margarita, Mixer: , Spirit: Agave, Amount: .75 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Spicy Tequila, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Big D Margarita, Mixer: Lime Juice, Spirit: , Amount: 1 oz, Garnish: , Glass: Scooners
+Row Drink: Big D Margarita, Mixer: , Spirit: Agave, Amount: 1oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Socorro Blanco Tequila, Amount: 3 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: Simple Syrup, Spirit: , Amount: 0.25 oz, Garnish: , Glass: Rocks
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Batch, Amount: 2.5 oz, Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Black Walnut Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Orange Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: , Amount: , Garnish: Orange Peel, Glass: 
+Row Drink: Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Margarita
+Row Drink: Margarita, Mixer: , Spirit: Triple Sec, Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: Tequila, Amount: 2.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Pineapple Juice, Spirit: , Amount: 0.75 oz, Garnish: , Glass: Collins
+Row Drink: Pineapple Rum Noir, Mixer: Strawberry Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Simple Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Rum, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Pinapple, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Mint Sprig, Glass: 
+Row Drink: Cosm-Politan, Mixer: Crannberry Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: Martini
+Row Drink: Cosm-Politan, Mixer: Lime Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: Batch, Amount: 2.75 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Dragon Fruit, Glass: 
+Row Drink: Spicy Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Rocks
+Row Drink: Spicy Margarita, Mixer: , Spirit: Agave, Amount: .75 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Spicy Tequila, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Big D Margarita, Mixer: Lime Juice, Spirit: , Amount: 1 oz, Garnish: , Glass: Scooners
+Row Drink: Big D Margarita, Mixer: , Spirit: Agave, Amount: 1oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Socorro Blanco Tequila, Amount: 3 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: Simple Syrup, Spirit: , Amount: 0.25 oz, Garnish: , Glass: Rocks
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Batch, Amount: 2.5 oz, Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Black Walnut Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Orange Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: , Amount: , Garnish: Orange Peel, Glass: 
+Row Drink: Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Margarita
+Row Drink: Margarita, Mixer: , Spirit: Triple Sec, Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: Tequila, Amount: 2.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Pineapple Juice, Spirit: , Amount: 0.75 oz, Garnish: , Glass: Collins
+Row Drink: Pineapple Rum Noir, Mixer: Strawberry Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Simple Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Rum, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Pinapple, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Mint Sprig, Glass: 
+Row Drink: Cosm-Politan, Mixer: Crannberry Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: Martini
+Row Drink: Cosm-Politan, Mixer: Lime Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: Batch, Amount: 2.75 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Dragon Fruit, Glass: 
+Row Drink: Spicy Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Rocks
+Row Drink: Spicy Margarita, Mixer: , Spirit: Agave, Amount: .75 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Spicy Tequila, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Big D Margarita, Mixer: Lime Juice, Spirit: , Amount: 1 oz, Garnish: , Glass: Scooners
+Row Drink: Big D Margarita, Mixer: , Spirit: Agave, Amount: 1oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Socorro Blanco Tequila, Amount: 3 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 127.0.0.1 - - [01/Aug/2025 12:56:09] "GET /select_drink HTTP/1.1" 200 -
+127.0.0.1 - - [01/Aug/2025 12:56:11] "GET /train/Margarita HTTP/1.1" 200 -
+
+Row Drink: Tri-Blended Old Fashion, Mixer: Simple Syrup, Spirit: , Amount: 0.25 oz, Garnish: , Glass: Rocks
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Batch, Amount: 2.5 oz, Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Black Walnut Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Orange Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: , Amount: , Garnish: Orange Peel, Glass: 
+Row Drink: Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Margarita
+Row Drink: Margarita, Mixer: , Spirit: Triple Sec, Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: Tequila, Amount: 2.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Pineapple Juice, Spirit: , Amount: 0.75 oz, Garnish: , Glass: Collins
+Row Drink: Pineapple Rum Noir, Mixer: Strawberry Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Simple Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Rum, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Pinapple, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Mint Sprig, Glass: 
+Row Drink: Cosm-Politan, Mixer: Crannberry Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: Martini
+Row Drink: Cosm-Politan, Mixer: Lime Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: Batch, Amount: 2.75 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Dragon Fruit, Glass: 
+Row Drink: Spicy Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Rocks
+Row Drink: Spicy Margarita, Mixer: , Spirit: Agave, Amount: .75 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Spicy Tequila, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Big D Margarita, Mixer: Lime Juice, Spirit: , Amount: 1 oz, Garnish: , Glass: Scooners
+Row Drink: Big D Margarita, Mixer: , Spirit: Agave, Amount: 1oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Socorro Blanco Tequila, Amount: 3 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: Simple Syrup, Spirit: , Amount: 0.25 oz, Garnish: , Glass: Rocks
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Batch, Amount: 2.5 oz, Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Black Walnut Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Orange Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: , Amount: , Garnish: Orange Peel, Glass: 
+Row Drink: Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Margarita
+Row Drink: Margarita, Mixer: , Spirit: Triple Sec, Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: Tequila, Amount: 2.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Pineapple Juice, Spirit: , Amount: 0.75 oz, Garnish: , Glass: Collins
+Row Drink: Pineapple Rum Noir, Mixer: Strawberry Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Simple Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Rum, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Pinapple, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Mint Sprig, Glass: 
+Row Drink: Cosm-Politan, Mixer: Crannberry Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: Martini
+Row Drink: Cosm-Politan, Mixer: Lime Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: Batch, Amount: 2.75 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Dragon Fruit, Glass: 
+Row Drink: Spicy Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Rocks
+Row Drink: Spicy Margarita, Mixer: , Spirit: Agave, Amount: .75 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: Spicy Tequila, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Tajin Rim, Glass: 
+Row Drink: Spicy Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Big D Margarita, Mixer: Lime Juice, Spirit: , Amount: 1 oz, Garnish: , Glass: Scooners
+Row Drink: Big D Margarita, Mixer: , Spirit: Agave, Amount: 1oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Socorro Blanco Tequila, Amount: 3 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: Orange Liqueur, Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Big D Margarita, Mixer: , Spirit: , Amount: , Garnish: Lime Wedge, Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: Simple Syrup, Spirit: , Amount: 0.25 oz, Garnish: , Glass: Rocks
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Batch, Amount: 2.5 oz, Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Black Walnut Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: Orange Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Tri-Blended Old Fashion, Mixer: , Spirit: , Amount: , Garnish: Orange Peel, Glass: 
+Row Drink: Margarita, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: Margarita
+Row Drink: Margarita, Mixer: , Spirit: Triple Sec, Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: Tequila, Amount: 2.0 oz, Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: , Glass: 
+Row Drink: Margarita, Mixer: , Spirit: , Amount: , Garnish: Salt Rim, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Pineapple Juice, Spirit: , Amount: 0.75 oz, Garnish: , Glass: Collins
+Row Drink: Pineapple Rum Noir, Mixer: Strawberry Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Lime Juice, Spirit: , Amount: 1.0 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: Simple Syrup, Spirit: , Amount: 0.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Rum, Amount: 1.5 oz, Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: Bitters, Amount: , Garnish: , Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Dehydrated Pinapple, Glass: 
+Row Drink: Pineapple Rum Noir, Mixer: , Spirit: , Amount: , Garnish: Mint Sprig, Glass: 
+Row Drink: Cosm-Politan, Mixer: Crannberry Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: Martini
+Row Drink: Cosm-Politan, Mixer: Lime Juice, Spirit: , Amount: .5 oz, Garnish: , Glass: 
+Row Drink: Cosm-Politan, Mixer: , Spirit: Batch, Amount: 2.75 oz, Garnish: , Glass: 127.0.0.1 - - [01/Aug/2025 12:56:32] "POST /check_answer/Margarita HTTP/1.1" 200 -
+127.0.0.1 - - [01/Aug/2025 12:56:53] "POST /check_answer/Margarita HTTP/1.1" 200 -
+127.0.0.1 - - [01/Aug/2025 12:58:40] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [01/Aug/2025 12:58:40] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [01/Aug/2025 12:58:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [01/Aug/2025 12:58:56] "GET / HTTP/1.1" 200 -

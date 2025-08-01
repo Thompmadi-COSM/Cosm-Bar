@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic document setup -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Page title shown in browser tab -->
+  <title>Select Drink to Train</title>
+
+  <!-- Load custom fonts: Anton for headings/buttons, IBM Plex Sans for text -->
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Sans&display=swap" rel="stylesheet" />
+
+  <style>
+
+    #stars {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  pointer-events: none;
+}
+
+    /* === Page Reset and Base Styles === */
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      position: relative;
+      overflow: hidden;
+      background-color: black;
+      color: white;
+      font-family: 'IBM Plex Sans', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      padding: 40px 20px;
+      text-align: center;
+      z-index: 0; /* So background stays behind everything else */
+    }
+
+    /* === Animated Starry Background Layer === */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("https://www.transparenttextures.com/patterns/stardust.png") repeat;
+      opacity: 0.1;
+      animation: twinkle 5s infinite alternate;
+      pointer-events: none; /* So clicks go through to real content */
+      z-index: -1;
+    }
+
+    @keyframes twinkle {
+      0% { opacity: 0.1; }
+      100% { opacity: 0.3; }
+    }
+
+    /* === Header Title === */
+    h1 {
+      font-family: 'Anton', sans-serif;
+      font-size: 60px;
+      margin-bottom: 30px;
+      letter-spacing: 4px;
+      z-index: 1;
+    }
+
+a.back-link {
+  color: #aaa;
+  text-decoration: none;
+  font-family: 'Anton', sans-serif;
+  margin-bottom: 30px;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  z-index: 2;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  display: inline-block;
+}
+
+
+
+a.back-link:hover,
+a.back-link:focus {
+  color: #ffcc00;
+  outline: none;
+  text-decoration: underline;
+}
+
+
+    /* === Container that holds all drink buttons === */
+    .button-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2-column layout */
+      gap: 30px;
+      justify-items: center;
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      z-index: 1;
+    }
+
+    /* === Each Drink Button === */
+    .drink-button {
+      width: 100%;
+      max-width: 260px;
+      height: 70px;
+      font-family: 'Anton', sans-serif;
+      font-size: 24px;
+      background-color: #0d1e36;
+      border: 2px solid #2e9afe;
+      border-radius: 12px;
+      color: white;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      letter-spacing: 1px;
+      text-decoration: none;
+      user-select: none;
+      transition: 0.3s ease;
+    }
+
+    .drink-button:hover,
+    .drink-button:focus {
+      background-color: #2e9afe;
+      color: black;
+      box-shadow: 0 0 15px #2e9afe;
+      outline: none;
+      text-decoration: none;
+    }
+
+    /* === Mobile Layout Adjustment: stack buttons in one column === */
+    @media (max-width: 500px) {
+      .button-container {
+        grid-template-columns: 1fr;
+      }
+
+      .drink-button {
+        max-width: none;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="content">
+  <a href="{{ back_url }}" class="back-link">← Back to Home</a>
+  <h1 class="page-title">Select a Drink</h1>
+
+
+
+  <!-- Dynamically generated list of drinks -->
+  <div class="button-container">
+    {% for drink in drinks %}
+      <!-- Each drink links to the train page for that specific drink -->
+      <a href="{{ url_for('train', drink_name=drink) }}" class="drink-button">{{ drink }}</a>
+    {% endfor %}
+  </div>
+
+<canvas id="stars"></canvas>
+<script>
+  const canvas = document.getElementById('stars');
+  const ctx = canvas.getContext('2d');
+  let stars = [];
+
+  function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
+
+  function createStars(count) {
+    stars = [];
+    for (let i = 0; i < count; i++) {
+      stars.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        radius: Math.random() * 1.5 + 0.5,
+        alpha: Math.random(),
+        delta: Math.random() * 0.02 + 0.005
+      });
+    }
+  }
+
+  function animateStars() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    for (let star of stars) {
+      star.alpha += star.delta;
+      if (star.alpha <= 0 || star.alpha >= 1) star.delta *= -1;
+      ctx.beginPath();
+      ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(255, 255, 255, ${star.alpha})`;
+      ctx.fill();
+    }
+    requestAnimationFrame(animateStars);
+  }
+
+  window.addEventListener('resize', () => {
+    resizeCanvas();
+    createStars(100);
+  });
+
+  resizeCanvas();
+  createStars(100);
+  animateStars();
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

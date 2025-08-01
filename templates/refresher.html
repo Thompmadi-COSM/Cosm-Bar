@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic setup for proper page rendering and mobile scaling -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recipe Refresher - COSM Bartender's Training</title>
+
+  <!-- Load fonts: Anton (headings/buttons) + IBM Plex Sans (everything else) -->
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Sans&display=swap" rel="stylesheet" />
+
+  <style>
+
+    #stars {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  pointer-events: none;
+}
+
+    /* --- Base Reset + Layout --- */
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      position: relative;
+      overflow-x: hidden;
+      overflow-y: auto;
+      background-color: black;
+      color: white;
+      font-family: 'IBM Plex Sans', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start; /* Top-aligned */
+      min-height: 100vh;
+      padding: 40px 20px;
+      text-align: center;
+      z-index: 0;
+    }
+
+    /* --- Background Starfield --- */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: url("https://www.transparenttextures.com/patterns/stardust.png") repeat;
+      opacity: 0.15;
+      animation: twinkle 6s infinite alternate;
+      pointer-events: none;
+      z-index: -1;
+    }
+    @keyframes twinkle {
+      0% { opacity: 0.15; }
+      100% { opacity: 0.3; }
+    }
+
+    /* --- Header Title --- */
+    h1 {
+      font-family: 'Anton', sans-serif;
+      font-size: 60px;
+      margin-bottom: 30px;
+      letter-spacing: 4px;
+      z-index: 1;
+    }
+
+    /* --- Back to Home Link --- */
+    a.back-link {
+      color: #aaa;
+      text-decoration: none;
+      font-family: 'Anton', sans-serif;
+      margin-bottom: 30px;
+      font-size: 18px;
+      letter-spacing: 1.5px;
+      align-self: flex-start;
+      z-index: 1;
+      transition: color 0.3s ease;
+      cursor: pointer;
+      display: inline-block;
+    }
+    a.back-link:hover,
+    a.back-link:focus {
+      color: #ffcc00;
+      outline: none;
+      text-decoration: underline;
+    }
+
+    /* --- Drink List Container --- */
+    .drink-list {
+      list-style: none;
+      padding: 0;
+      max-width: 700px;
+      width: 100%;
+      margin: 0 auto 40px auto;
+      z-index: 1;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    /* --- Each Drink Block --- */
+    .drink-item {
+      background-color: #0d1e36;
+      border: 2px solid #2e9afe;
+      border-radius: 12px;
+      padding: 20px 25px;
+      cursor: pointer;
+      user-select: none;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      outline: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .drink-item:hover,
+    .drink-item:focus {
+      background-color: #2e9afe;
+      color: black;
+      box-shadow: 0 0 15px #2e9afe;
+    }
+
+    /* --- Drink Title --- */
+    .drink-name {
+      font-family: 'Anton', sans-serif;
+      font-size: 28px;
+      margin: 0;
+      letter-spacing: 2px;
+      user-select: text; /* Allow copy/paste */
+      width: 100%;
+    }
+
+    /* --- Hidden Recipe Info --- */
+    .recipe-details {
+      margin-top: 15px;
+      font-size: 18px;
+      line-height: 1.4;
+      display: none; /* Hidden until clicked */
+      padding-left: 12px;
+      border-left: 3px solid white;
+      width: 100%;
+      user-select: text;
+    }
+
+    .recipe-details ul {
+      margin: 5px 0 10px 20px;
+      padding: 0;
+      list-style: none;
+    }
+
+    /* --- "Play Recipe" Button --- */
+    .play-button {
+      margin-top: 12px;
+      background: #2e9afe;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 12px;
+      font-weight: normal;
+      cursor: pointer;
+      font-family: 'Anton', sans-serif;
+      letter-spacing: 1px;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      user-select: none;
+      align-self: flex-start;
+    }
+
+    .play-button:hover,
+    .play-button:focus {
+      background: #0d6efd;
+      box-shadow: 0 0 15px #2e9afe;
+      outline: none;
+    }
+
+    /* --- Responsive Tweaks for Mobile --- */
+    @media (max-width: 600px) {
+      .drink-list {
+        max-width: 100%;
+        padding: 0 10px;
+      }
+      .drink-item {
+        padding: 15px 20px;
+      }
+      h1 {
+        font-size: 48px;
+      }
+      .drink-name {
+        font-size: 24px;
+      }
+      .play-button {
+        padding: 8px 16px;
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation link to return to homepage -->
+  <a href="{{ back_url }}" class="back-link">← Back to Home</a>
+
+  <!-- Main title -->
+  <h1>Recipe Refresher</h1>
+
+  <!-- Loop through each drink and display its name and full recipe -->
+  <ul class="drink-list">
+    {% for drink in drinks %}
+      <li class="drink-item" tabindex="0"> <!-- Allows keyboard users to focus -->
+        <p class="drink-name">{{ drink }}</p>
+
+        <div class="recipe-details">
+          <p><strong>Mixers & Amounts:</strong></p>
+          <ul>
+            {% for mixer, amt in zip(mixers[drink], amounts[drink]) if mixer %}
+              <li>{{ amt }} {{ mixer }}</li>
+            {% endfor %}
+          </ul>
+
+          <p><strong>Spirits & Amounts:</strong></p>
+          <ul>
+            {% for spirit, amt in zip(spirits[drink], amounts[drink]) if spirit %}
+              <li>{{ amt }} {{ spirit }}</li>
+            {% endfor %}
+          </ul>
+
+          <p><strong>Garnish:</strong> {{ garnishes[drink] }}</p>
+
+          <!-- Play recipe aloud using browser speech synthesis -->
+          <button class="play-button" type="button" aria-label="Play recipe audio for {{ drink }}">🔊 Play Recipe Audio</button>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <!-- JavaScript to handle click/toggle + speech -->
+  <script>
+    // Loop over each drink item
+    document.querySelectorAll('.drink-item').forEach(item => {
+
+      // Toggle the recipe visibility on click
+      item.addEventListener('click', () => {
+        const details = item.querySelector('.recipe-details');
+        details.style.display = (details.style.display === 'block') ? 'none' : 'block';
+      });
+
+      // Make items accessible via Enter or Space key
+      item.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          item.click();
+        }
+      });
+
+      // Play button logic — reads out full recipe
+      const button = item.querySelector('.play-button');
+      button.addEventListener('click', e => {
+        e.stopPropagation(); // Prevent click from toggling visibility
+
+        const drinkName = item.querySelector('.drink-name').textContent;
+        const details = item.querySelector('.recipe-details');
+
+        // Build the spoken text
+        let text = `Here is the recipe for ${drinkName}. `;
+
+        const mixerItems = details.querySelectorAll('ul:nth-of-type(1) li');
+        if (mixerItems.length > 0) {
+          text += 'Mixers and amounts: ';
+          mixerItems.forEach(li => {
+            text += li.textContent + ', ';
+          });
+        }
+
+        const spiritItems = details.querySelectorAll('ul:nth-of-type(2) li');
+        if (spiritItems.length > 0) {
+          text += 'Spirits and amounts: ';
+          spiritItems.forEach(li => {
+            text += li.textContent + ', ';
+          });
+        }
+
+        // Add garnish
+        const garnishText = details.querySelector('p:nth-of-type(3)').textContent;
+        text += garnishText + '.';
+
+        // Speak it
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.rate = 1;
+        window.speechSynthesis.cancel(); // Stop any ongoing speech
+        window.speechSynthesis.speak(utterance);
+      });
+    });
+  </script>
+
+<canvas id="stars"></canvas>
+<script>
+  const canvas = document.getElementById('stars');
+  const ctx = canvas.getContext('2d');
+  let stars = [];
+
+  function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
+
+  function createStars(count) {
+    stars = [];
+    for (let i = 0; i < count; i++) {
+      stars.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        radius: Math.random() * 1.5 + 0.5,
+        alpha: Math.random(),
+        delta: Math.random() * 0.02 + 0.005
+      });
+    }
+  }
+
+  function animateStars() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    for (let star of stars) {
+      star.alpha += star.delta;
+      if (star.alpha <= 0 || star.alpha >= 1) star.delta *= -1;
+      ctx.beginPath();
+      ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(255, 255, 255, ${star.alpha})`;
+      ctx.fill();
+    }
+    requestAnimationFrame(animateStars);
+  }
+
+  window.addEventListener('resize', () => {
+    resizeCanvas();
+    createStars(100);
+  });
+
+  resizeCanvas();
+  createStars(100);
+  animateStars();
+</script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

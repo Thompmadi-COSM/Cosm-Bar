@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic setup -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Train {{ drink_name }} - COSM Bartender's Training</title>
+
+  <!-- Load the IBM Plex Sans font -->
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet" />
+
+  <style>
+
+    #stars {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  pointer-events: none;
+}
+
+    /* === Main layout === */
+    body {
+      background-color: black;
+      color: white;
+      font-family: 'IBM Plex Sans', sans-serif;
+      padding: 20px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: row; /* side-by-side layout */
+      justify-content: center;
+      max-width: 100vw;
+      overflow-x: hidden;
+      gap: 30px;
+    }
+
+    /* === Container for drink interaction steps === */
+    #interactive-container {
+      flex: 1;
+      max-width: 900px;
+      text-align: center;
+    }
+
+    /* === Each section of the simulation (e.g., mixers, spirits) === */
+    .section {
+      margin-bottom: 25px;
+      width: 100%;
+    }
+
+    /* === Button groups for each step === */
+    .step-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 15px;
+      justify-content: center;
+    }
+
+    /* === Buttons used for all steps === */
+    button {
+      background-color: #222;
+      color: white;
+      border: 1.5px solid #666;
+      border-radius: 12px;
+      padding: 14px 28px;
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 18px;
+      cursor: pointer;
+      transition: 0.3s ease;
+      letter-spacing: 1.5px;
+      user-select: none;
+      min-width: 120px;
+      text-align: center;
+    }
+
+    /* === Hover effect on step buttons === */
+    button:hover {
+      background-color: white;
+      color: black;
+      box-shadow: 0 0 10px white;
+    }
+
+    /* === Undo, Reset, Serve buttons === */
+    .action-buttons {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      margin-top: 25px;
+      width: 100%;
+    }
+
+    /* === Disabled state for Serve button === */
+    #serve-btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    /* === Link back to drink selection === */
+a.back-button {
+  color: #aaa;
+  text-decoration: none;
+  font-family: 'Anton', sans-serif;
+  margin-bottom: 30px;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  align-self: flex-start;
+  z-index: 1;
+  transition: color 0.3s ease;
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+a.back-button:hover,
+a.back-button:focus {
+  color: #ffcc00;
+  outline: none;
+  text-decoration: underline;
+}
+
+    /* === Area that shows selected steps as user clicks === */
+    .feedback {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    /* === Sidebar/terminal to track user's build === */
+    #terminal-container {
+      width: 280px;
+      background-color: #111;
+      border: 1px solid #666;
+      border-radius: 12px;
+      padding: 20px;
+      color: white;
+      font-size: 20px;
+      line-height: 1.5;
+      user-select: none;
+      display: flex;
+      flex-direction: column;
+      position: sticky;
+      top: 20px;
+      height: fit-content;
+      min-height: 300px;
+    }
+
+    #terminal-title {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      text-align: center;
+      letter-spacing: 1.2px;
+    }
+
+    #selected-steps {
+      flex-grow: 1;
+      overflow-y: auto;
+      white-space: normal;
+      word-break: break-word;
+    }
+
+    .step-line {
+      margin-bottom: 8px;
+    }
+
+    /* === Expand/collapse style for each section === */
+    details summary {
+      font-size: 1.5rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Main training interface -->
+  <div id="interactive-container">
+    <!-- Go back to drink selection screen -->
+    <a href="{{ back_url }}" class="back-button">← Back</a>
+
+
+    <!-- Drink being trained -->
+    <h2 style="font-size: 2.5rem; font-weight: bold;">Make a {{ drink_name }}</h2>
+
+    <!-- Each step below renders a section of clickable options -->
+    <details class="section" open>
+      <summary> Mixers</summary>
+      <div class="step-buttons" id="mixer-buttons">
+        {% for mixer in mixers %}
+          <button type="button" data-type="ingredient" data-value="{{ mixer }}">{{ mixer }}</button>
+        {% endfor %}
+      </div>
+    </details>
+
+    <details class="section">
+      <summary> Spirits</summary>
+      <div class="step-buttons" id="spirit-buttons">
+        {% for spirit in spirits %}
+          <button type="button" data-type="ingredient" data-value="{{ spirit }}">{{ spirit }}</button>
+        {% endfor %}
+      </div>
+    </details>
+
+    <details class="section">
+      <summary> Amounts</summary>
+      <div class="step-buttons" id="amount-buttons">
+        {% for amount in amounts %}
+          <button type="button" data-type="amount" data-value="{{ amount }} oz">{{ amount }} oz</button>
+        {% endfor %}
+      </div>
+    </details>
+
+    <details class="section">
+      <summary> Glass Type</summary>
+      <div class="step-buttons" id="glass-buttons">
+        {% for glass in glass_types %}
+          <button type="button" data-type="glass" data-value="{{ glass }}">{{ glass }}</button>
+        {% endfor %}
+      </div>
+    </details>
+
+    <details class="section">
+      <summary> Garnish</summary>
+      <div class="step-buttons" id="garnish-buttons">
+        {% for garnish in garnishes %}
+          <button type="button" data-type="garnish" data-value="{{ garnish }}">{{ garnish }}</button>
+        {% endfor %}
+      </div>
+    </details>
+
+    <!-- Action buttons for user control -->
+    <div class="action-buttons">
+      <button id="undo-btn">Undo</button>
+      <button id="reset-btn">Reset</button>
+      <button id="serve-btn" disabled>Serve</button>
+    </div>
+  </div>
+
+  <!-- Sidebar that shows selected steps -->
+  <div id="terminal-container" aria-live="polite" aria-atomic="true">
+    <div id="terminal-title">Your Current Drink</div>
+    <div id="selected-steps">No steps selected yet.</div>
+    <div class="feedback" id="feedback"></div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // === Define the correct sequence for this drink (sent from Flask) ===
+      const correct = {
+        mixers: {{ correct.mixers | tojson }},
+        spirits: {{ correct.spirits | tojson }},
+        amounts: {{ correct.amounts | tojson }},
+        glass_type: "{{ correct.glass_type }}",
+        garnish: "{{ correct.garnish }}"
+      };
+
+      // Build flat correctSteps array in the form "Ingredient - Amount oz"
+      const correctSteps = [];
+
+      for (let i = 0; i < correct.mixers.length; i++) {
+        correctSteps.push(`${correct.mixers[i]} - ${parseFloat(correct.amounts[i]).toFixed(2)} oz`);
+      }
+      for (let j = 0; j < correct.spirits.length; j++) {
+        const amtIndex = j + correct.mixers.length;
+        correctSteps.push(`${correct.spirits[j]} - ${parseFloat(correct.amounts[amtIndex]).toFixed(2)} oz`);
+      }
+
+      correctSteps.push(correct.glass_type);
+      correctSteps.push(correct.garnish);
+
+      let userSteps = [];
+
+      const selectedStepsDiv = document.getElementById('selected-steps');
+      const feedbackDiv = document.getElementById('feedback');
+      const serveBtn = document.getElementById('serve-btn');
+      const undoBtn = document.getElementById('undo-btn');
+      const resetBtn = document.getElementById('reset-btn');
+
+      function renderSelectedSteps() {
+        selectedStepsDiv.innerHTML = '';
+        if(userSteps.length === 0){
+          selectedStepsDiv.textContent = 'No steps selected yet.';
+          return;
+        }
+
+        userSteps.forEach(step => {
+          const lineDiv = document.createElement('div');
+          lineDiv.className = 'step-line';
+          lineDiv.textContent = step;
+          selectedStepsDiv.appendChild(lineDiv);
+        });
+      }
+
+      function updateSelectedSteps() {
+        renderSelectedSteps();
+        serveBtn.disabled = userSteps.length === 0;
+        feedbackDiv.textContent = '';
+      }
+
+      undoBtn.onclick = () => {
+        if(userSteps.length > 0){
+          userSteps.pop();
+          updateSelectedSteps();
+        }
+      };
+
+      resetBtn.onclick = () => {
+        userSteps = [];
+        updateSelectedSteps();
+      };
+
+      let lastIngredient = null;
+
+function onStepButtonClick(e) {
+  const btn = e.target;
+  const val = btn.dataset.value;
+  const type = btn.dataset.type;
+
+  if (type === 'ingredient') {
+    // Store the selected ingredient temporarily
+    lastIngredient = val;
+    feedbackDiv.textContent = `Selected ingredient: ${val}. Now select amount.`;
+  } else if (type === 'amount') {
+    if (!lastIngredient) {
+      feedbackDiv.textContent = 'Please select an ingredient before selecting an amount.';
+      return;
+    }
+    // Combine ingredient + amount as one step string
+    const combinedStep = `${lastIngredient} - ${val}`;
+    userSteps.push(combinedStep);
+    lastIngredient = null;
+    updateSelectedSteps();
+  } else {
+    // For glass or garnish, just add the value directly
+    userSteps.push(val);
+    updateSelectedSteps();
+  }
+}
+
+
+      const allStepButtons = document.querySelectorAll('button[data-type]');
+      allStepButtons.forEach(btn => btn.addEventListener('click', onStepButtonClick));
+
+      serveBtn.onclick = async () => {
+        if (userSteps.length === 0) {
+          feedbackDiv.textContent = "Please select some steps first.";
+          return;
+        }
+
+        try {
+          const response = await fetch(`/check_answer/{{ drink_name }}`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ user_steps: userSteps })
+          });
+
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+
+          const data = await response.json();
+
+          if (data.correct) {
+            feedbackDiv.textContent = "Your fan enjoyed their drink! 🍹";
+            serveBtn.disabled = true;
+          } else {
+            feedbackDiv.textContent = "Oops! Some steps were incorrect.";
+            if (!document.getElementById('show-correct-btn')) {
+              const showBtn = document.createElement('button');
+              showBtn.id = 'show-correct-btn';
+              showBtn.textContent = 'Show Correct Recipe';
+              showBtn.style.marginTop = '15px';
+              showBtn.onclick = () => {
+                alert('Correct Steps:\n' + correctSteps.join('\n'));
+              };
+              feedbackDiv.appendChild(showBtn);
+            }
+          }
+
+        } catch (error) {
+          feedbackDiv.textContent = "Error checking answer. Please try again.";
+          console.error('Error:', error);
+        }
+      };
+
+      updateSelectedSteps();
+    });
+  </script>
+<canvas id="stars"></canvas>
+<script>
+  const canvas = document.getElementById('stars');
+  const ctx = canvas.getContext('2d');
+  let stars = [];
+
+  function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
+
+  function createStars(count) {
+    stars = [];
+    for (let i = 0; i < count; i++) {
+      stars.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        radius: Math.random() * 1.5 + 0.5,
+        alpha: Math.random(),
+        delta: Math.random() * 0.02 + 0.005
+      });
+    }
+  }
+
+  function animateStars() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    for (let star of stars) {
+      star.alpha += star.delta;
+      if (star.alpha <= 0 || star.alpha >= 1) star.delta *= -1;
+      ctx.beginPath();
+      ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(255, 255, 255, ${star.alpha})`;
+      ctx.fill();
+    }
+    requestAnimationFrame(animateStars);
+  }
+
+  window.addEventListener('resize', () => {
+    resizeCanvas();
+    createStars(100);
+  });
+
+  resizeCanvas();
+  createStars(100);
+  animateStars();
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
